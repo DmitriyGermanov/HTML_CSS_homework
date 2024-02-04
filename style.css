@@ -88,6 +88,8 @@ body {
   flex-direction: column;
 }
 .main__title__description {
+  max-width: 466px;
+  width: 100%;
   color: rgb(136, 136, 136);
   font-size: 20px;
   font-weight: 400;
@@ -136,7 +138,7 @@ button {
   width: 140px;
   margin-top: 20px;
   height: 50px;
-  outline: none;
+  border: none;
 }
 .content__link {
   color: rgb(170, 170, 170);
