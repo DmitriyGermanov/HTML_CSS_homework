@@ -41,16 +41,17 @@ body {
   font-family: "Gilroy-Medium";
   margin: 0;
   padding: 0;
-  max-width: 1171px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+
 }
 
 .block1 {
   width: 100%;
   background-color: rgb(255, 255, 255);
+  max-width: 1171px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .header {
   display: flex;
@@ -185,16 +186,19 @@ button {
 }
 
 .block2 {
-  width: 100%;
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-rows: min-content auto;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .top__block {
-  min-height: 326px;
+  max-width: 1171px;
+  min-height: 391px;
   padding-top: 100px;
-  padding-bottom: 65px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid__container {
@@ -262,6 +266,57 @@ button {
   text-align: left;
 }
 
+.bottom__block {
+  display: flex;
+  position: relative;
+  background-image: url(./img/block2/bottom_иackgroubd.svg);
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+
+}
+.bottom__title__and__descripton__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 682px;
+}
+.bottom__title {
+  margin-top: 92px;
+  color: rgb(0, 0, 0);
+  font-family: Gilroy-ExtraBold;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.bottom__description {
+  color: rgb(102, 102, 102);
+  font-family: Gilroy-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.bottom__main__connant__conatiner {
+  margin-top: 54px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 0px 30px;
+  width: 100%;
+  min-height: 549px;
+}
+.bottom__background__container{
+  background-image: url(./img/block2/BG_middle.svg);
+}
+
+
 @media (max-width: 600px) {
   body {
     padding-left: 10px;
@@ -289,12 +344,11 @@ button {
   }
   .footer {
     margin-top: 20px;
-  } 
-  .middle__block__background__image{
+  }
+  .middle__block__background__image {
     width: 134%;
   }
   .grid__container {
     grid-auto-rows: minmax(300px, auto);
   }
-
 }
