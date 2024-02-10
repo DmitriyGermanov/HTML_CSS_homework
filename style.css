@@ -41,7 +41,6 @@ body {
   font-family: "Gilroy-Medium";
   margin: 0;
   padding: 0;
-
 }
 
 .block1 {
@@ -216,17 +215,11 @@ button {
   height: auto;
 }
 
-.middle__block__text {
-  position: absolute;
-}
-
 .middle__block__background__image {
   background-size: cover;
   position: absolute;
   left: -20%;
   top: -15%;
-  width: 134%;
-  height: auto;
   z-index: -1;
 }
 
@@ -267,21 +260,16 @@ button {
 }
 
 .bottom__block {
-  display: flex;
-  position: relative;
   background-image: url(./img/block2/bottom_иackgroubd.svg);
-  justify-content: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: space-around;
-  align-items: center;
-
 }
+
 .bottom__title__and__descripton__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 682px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bottom__title {
   margin-top: 92px;
@@ -303,19 +291,86 @@ button {
   letter-spacing: 0%;
   text-align: center;
 }
-
-.bottom__main__connant__conatiner {
-  margin-top: 54px;
+.bottom_main_block {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  max-width: 1171px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom__main__content__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  margin-top: 54px;
   gap: 0px 30px;
-  width: 100%;
   min-height: 549px;
 }
-.bottom__background__container{
+.bottom__background__container {
   background-image: url(./img/block2/BG_middle.svg);
 }
 
+.bottom__blocks__title {
+  padding-top: 25px;
+  color: rgb(0, 0, 0);
+  font-family: Gilroy-ExtraBold;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: -1px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.bottom__blocks__description {
+  padding-top: 22px;
+  color: rgb(170, 170, 170);
+  font-family: Gilroy-Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.bottom__background__container {
+  display: flex;
+  flex-flow: wrap;
+  place-content: stretch center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bottom__buttons {
+  margin-top: 39px;
+}
+
+@media (max-width: 1024px) {
+  .main__title {
+    font-size: 50px;
+  }
+  .content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    margin-top: 15px;
+  }
+  .footer {
+    margin-top: 20px;
+  }
+
+  .grid__container {
+    grid-auto-rows: minmax(300px, auto);
+  }
+  .block__illustration {
+    width: 100%;
+  }
+  .bottom__main__content__container {
+    grid-row-gap: 20px;
+    grid-auto-rows: minmax(549px, auto);
+  }
+}
 
 @media (max-width: 600px) {
   body {
@@ -332,23 +387,33 @@ button {
   .bottom__block__3 .bottom__block__2 {
     margin-top: 20px;
   }
-}
 
-@media (max-width: 1024px) {
-  .main__title {
-    font-size: 50px;
+  .bottom__title {
+    margin-top: 16px;
+    text-align: center;
   }
-  .content {
-    grid-template-columns: 1fr;
-    margin-top: 15px;
-  }
-  .footer {
-    margin-top: 20px;
-  }
-  .middle__block__background__image {
-    width: 134%;
-  }
+
   .grid__container {
-    grid-auto-rows: minmax(300px, auto);
+    display: grid;
+    align-items: start;
   }
+
+  .blocks_title {
+    text-align: center;
+  }
+  .blocks__middle__text {
+    text-align: center;
+  }
+  .blocks__links {
+    text-align: center;
+  }
+
+  .top__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+
 }
